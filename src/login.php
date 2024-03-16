@@ -2,7 +2,6 @@
   include "php/dbh.inc.php";
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,26 +28,27 @@
     <div class="container">
       <div class="flex flex-wrap">
         <div class="w-full flex flex-col justify-center text-center px-4">
-          <span class="text-base font-semibold text-dark font-montserrat text-2xl">LOG IN</span>
+          <span class="font-semibold text-dark font-montserrat text-2xl">LOG IN</span>
           <form action="./php/login.ins.php" method="post">
-          <div class="py-4 text-start mt-5">
-            <span class="mb-2 text-lg">Email</span>
-            <input type="text"
-                   class="w-full p-2 border border-gray-300 placeholder:font-light placeholder:text-gray-500"
-                   name="email"
-                   id="email">
-          <div class="py-2 text-start mt-5">
-            <span class="mb-2 text-lg">Password</span>
-            <input type="text"
-                   class="w-full p-2 border border-gray-300 placeholder:font-light placeholder:text-gray-500"
-                   name="password"
-                   id="email">
-          </div>
+            <div class="py-4 text-start mt-5">
+              <span class="mb-2 text-lg">Email</span>
+              <input type="text"
+                     class="w-full p-2 border border-gray-300 placeholder:font-light placeholder:text-gray-500"
+                     name="email"
+                     id="email">
+            </div>
+            <div class="py-2 text-start mt-5">
+              <span class="mb-2 text-lg">Password</span>
+              <input type="password" <!-- Changed type to "password" -->
+                     class="w-full p-2 border border-gray-300 placeholder:font-light placeholder:text-gray-500"
+                     name="password"
+                     id="password"> <!-- Changed ID to "password" -->
+            </div>
 
-          <button name="login" class="w-36 bg-black text-white p-2 mb-6 hover:bg-white hover:text-black">
-          LOGIN
-          </button>
-        </form>
+            <button name="login" class="w-36 bg-black text-white p-2 mb-6 hover:bg-white hover:text-black">
+              LOGIN
+            </button>
+          </form>
 
           <div class="flex justify-between w-full py-4">
             <div class="mr-24">
